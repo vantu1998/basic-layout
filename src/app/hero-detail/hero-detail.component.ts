@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input,Output, EventEmitter } from '@angular/core';
 import { Hero } from '../hero';
 @Component({
   selector: 'app-hero-detail',
@@ -8,8 +8,12 @@ import { Hero } from '../hero';
 export class HeroDetailComponent implements OnInit {
   @Input() hero: Hero;
   constructor() { }
-
+  @Output() outToParent = new EventEmitter<string>();
+  inputText: string = "abc";
   ngOnInit(): void {
   }
-
+  send(): void{
+    this.outToParent.emit(this.inputText);
+  }
+  
 }

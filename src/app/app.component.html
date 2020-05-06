@@ -1,2 +1,10 @@
-<h1>{{title}}</h1>
-<app-heroes></app-heroes>
+<div class="container mt-10">
+    <h1>{{title}}</h1>
+<nav>
+    <a routerLink="/heroes">Heroes</a>
+    <a routerLink="/test">Pipe</a>
+    <a routerLink="/custompipe">Custompipe</a>
+</nav>
+<router-outlet></router-outlet>
+</div>
+

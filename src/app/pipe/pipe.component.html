@@ -1,0 +1,66 @@
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>STT</th>
+            <th>Tên pipe</th>
+            <th>Đầu vào</th>
+            <th>Kết quả</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>upercase</td>
+            <td>{{upperCaseInput}}</td>
+            <td>{{upperCaseInput | uppercase}}</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>lowercase</td>
+            <td>{{lowerCaseInput}}</td>
+            <td>{{lowerCaseInput | lowercase}}</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>slice</td>
+            <td>{{sliceText}}</td>
+            <td>{{sliceText | slice : 5 :13}}</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>slice</td>
+            <td>{{names}}</td>
+            <td>{{names | slice : 2}}</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>number</td>
+            <td>{{amount}}</td>
+            <td>{{amount | number : '5.0-2'}}</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>percent</td>
+            <td>{{result}}</td>
+            <td>{{result | number : '1.0-3'}}</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>currency</td>
+            <td>{{currency}}</td>
+            <td>{{currency | currency: 'VND':'symbol': '4.2-5'}}</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>date</td>
+            <td>{{date}}</td>
+            <td>{{date | date: 'y/dd/MM a H z'}}</td>
+        </tr>
+        <tr>
+           <td>8</td> 
+           <td>json</td> 
+           <td>{{abc}}</td> 
+           <td>{{abc | json}}</td> 
+        </tr>
+    </tbody>
+</table>
