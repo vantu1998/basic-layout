@@ -15,6 +15,9 @@ import { FilterPipe } from './pipeCusom/filter.pipe';
 import { ArrSortPipe } from './pipeCusom/arr-sort.pipe';
 import { SortNamePipe } from './pipeCusom/sort-name.pipe';
 import { LifecycleHookComponent } from './lifecycle-hook/lifecycle-hook.component';
+import { HomeComponent } from './home/home.component';
+import { ProductsComponent } from './products/products.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { LifecycleHookComponent } from './lifecycle-hook/lifecycle-hook.componen
     FilterPipe,
     ArrSortPipe,
     SortNamePipe,
-    LifecycleHookComponent
+    LifecycleHookComponent,
+    HomeComponent,
+    ProductsComponent,
+    ProductDetailComponent
   ],
   imports: [
     BrowserModule,
